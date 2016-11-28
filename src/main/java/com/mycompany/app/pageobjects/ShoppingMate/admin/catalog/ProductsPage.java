@@ -18,7 +18,7 @@ public class ProductsPage{
 	}
 	
 	public void OpenAmazonPlugin (){
-		genericpage.button.click(amazonButton,"Amazon");
+		genericpage.button.click(amazonButton,"Amazon button");
 	}
 	
 	public void SelectAll(){
