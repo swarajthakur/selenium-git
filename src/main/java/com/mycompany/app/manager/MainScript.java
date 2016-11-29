@@ -25,7 +25,7 @@ public class MainScript {
 		test.setName("Test");
 		
 		List<XmlClass> classes = new ArrayList<XmlClass>();
-		classes.add(new XmlClass("com.mycompany.app.testscripts.ShoppingMate.UpdatePrice"));
+		classes.add(new XmlClass("com.mycompany.app.testscripts.ShoppingMate.Search"));
 		test.setXmlClasses(classes) ;
 		
 		List<XmlSuite> suites = new ArrayList<XmlSuite>();
