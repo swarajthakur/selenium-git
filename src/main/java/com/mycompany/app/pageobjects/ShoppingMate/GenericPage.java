@@ -39,7 +39,7 @@ public class GenericPage extends SeleniumReporting{
 	}
 	
 	public void Search(String searchTerm){
-		editbox.sendKeys(searchbox,searchTerm, "Search box");
+		editbox.sendKeys(searchbox,searchTerm, "Search");
 		editbox.submit(searchbox, "Search");
 	}
 }
