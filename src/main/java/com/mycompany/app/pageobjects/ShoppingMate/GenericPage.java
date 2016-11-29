@@ -20,7 +20,8 @@ public class GenericPage extends SeleniumReporting{
 	public CheckBox checkbox;
 	public Label label;
 	
-	By searchbox = By.id("SimpleSearchForm_SearchTerm");
+	By searchbox = By.name("search");
+	By searchbutton = By.cssSelector("div.button-search > button[type=\"button\"]");
 	
 	public GenericPage(WebDriver webdriver) {
 		// TODO Auto-generated constructor stub
@@ -39,7 +40,8 @@ public class GenericPage extends SeleniumReporting{
 	}
 	
 	public void Search(String searchTerm){
-		editbox.sendKeys(searchbox,searchTerm, "Search box");
-		editbox.submit(searchbox, "Search");
+		editbox.sendKeys(searchbox,searchTerm, "Search");
+		button.click(searchbutton, "Search");
+		genericcontrol.assertTextExists("Products meeting the search criteria");
 	}
 }

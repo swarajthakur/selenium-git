@@ -42,6 +42,15 @@ public class GenericControls extends SeleniumReporting{
 		}
 	}
 	
+	public void assertTextExists(String value){
+			if(driver.getPageSource().contains(value)){
+				logTestResult("Text \""+value +"\" found");
+			}else{
+				logTestResult("Text \""+value +"\" not found");
+				Assert.fail("Text \""+value +"\" not found");
+			}
+	}
+	
 	public boolean checkElementExists(By element){
 		try{
 			driver.findElement(element).getTagName();
