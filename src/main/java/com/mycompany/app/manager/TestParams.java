@@ -6,5 +6,6 @@ public class TestParams {
 	public static String 	testName;
 	public static String 	nwpUSAUrl 	= 	"http://www.newark.com";
 	public static String 	adminUrl 	= 	"http://www.shoppingmate.co.uk/admin";
+	public static String 	storeUrl 	= 	"http://www.shoppingmate.co.uk/";
 	public static int 		Timeout 	= 	10;
 }
