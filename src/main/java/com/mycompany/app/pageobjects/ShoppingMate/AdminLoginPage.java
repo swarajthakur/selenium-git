@@ -19,9 +19,9 @@ public class AdminLoginPage{
 	By loginButton 	= By.linkText("Login");
 	
 	public void Login(){
-		genericpage.editbox.sendKeys(username, "admin", "User Name");
-		genericpage.editbox.sendKeys(password, "builder123", "Password");
-		genericpage.editbox.sendKeys(otp, getTOTPCode("WAVE7P3SVI6USA6T"), "OTP");
+		genericpage.editbox.sendKeys(username, "", "User Name");
+		genericpage.editbox.sendKeys(password, "", "Password");
+		genericpage.editbox.sendKeys(otp, getTOTPCode(""), "OTP");
 		genericpage.editbox.submit(otp,"Login");
 	}
 	
